@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+}
+
+.app {
+  text-align: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.search-container {
+  display: flex;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 15px;
+  border-radius: 50px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  background: transparent;
+  border: none;
+  padding: 10px;
+  color: white;
+  width: 180px;
+  outline: none;
+  font-size: 16px;
 }
+
+button {
+  background: #ffffff;
+  color: #1e3c72;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card {
+  padding: 30px;
+  width: 300px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.weather-icon img {
+  width: 120px;
+  margin: 15px 0;
+}
+
+.temp { font-size: 60px; margin: 5px 0; }
+
+.desc { text-transform: capitalize; opacity: 0.8; margin-bottom: 20px; }
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  padding-top: 15px;
+}
+
+.col p { font-size: 11px; margin: 0; opacity: 0.7; }
+.col strong { font-size: 16px; display: block; margin-top: 5px; }
